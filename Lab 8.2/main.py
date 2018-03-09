@@ -17,6 +17,7 @@ class PaintProgramWindow(QWidget):
         layout.addWidget(self.infoLbl)
 
         self.clearBtn = QPushButton("Clear", self)
+        self.clearBtn.clicked.connect(self.canvas.clear)
         layout.addWidget(self.clearBtn)
 
         self.setLayout(layout)
