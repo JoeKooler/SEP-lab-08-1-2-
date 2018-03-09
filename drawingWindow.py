@@ -31,6 +31,21 @@ class Simple_drawing_window(QWidget):
         p.drawPixmap(QRect(200,100,336,203),self.cat)
         p.end()
 
+# tawan modification
+class Simple_drawing_window(Simple_drawing_window) :
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Window 1")
+
+    def paintEvent(self, e):
+        super().paintEvent(self, e)
+        p = QPainter()
+        p.begin(self)
+        p.drawPixmap(QRect(0,0,100,100), self.rabbit)
+        p.end()
+# end tawan modification
+
+
 def main():
     app = QApplication(sys.argv)
 
