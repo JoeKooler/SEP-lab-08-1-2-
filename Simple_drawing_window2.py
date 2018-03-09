@@ -7,7 +7,7 @@ class Simple_drawing_window2(QWidget):
     def __init__(self):
         QWidget.__init__(self,None)
         self.setWindowTitle("Simple Drawing")
-        self.rabbit = QPixmap("images/rabbit.png")
+        self.rabbit = QPixmap("images/cat.png")
 
     def paintEvent(self, e):
         p = QPainter()
@@ -30,7 +30,7 @@ class Simple_drawing_window2(QWidget):
         p.drawPie(140, 180, 25, 25, 0, 360 * 100)
 
 
-        p.drawPixmap(QRect(200,100,320,320),self.rabbit)
+        p.drawPixmap(QRect(300,100,320,320),self.rabbit)
         p.end()
 
 def main():
