@@ -2,10 +2,10 @@ import turtle
 from Disk import *
 
 class Pole(object):
-    def __init__(self, name, x, y, thick, length, color):
+    def __init__(self, name, x, y, thick=5, length=200, color="yellow"):
         self.name = name
         self.stack = []
-        self.top = 0;
+        self.top = 0
         self.x = x
         self.y = y
         self.thick = thick
