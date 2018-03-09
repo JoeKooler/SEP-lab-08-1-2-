@@ -1,5 +1,5 @@
 import turtle
-import Pole
+from Disk import *
 
 class Pole(object):
     def __init__(self, name, x, y, thick, length, color):
