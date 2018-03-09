@@ -69,7 +69,6 @@ def main():
         w = Simple_drawing_window1()
         w.show()
     except Exception as e:
-        raise e
         print("no win 1 implemented")
 
     try:
