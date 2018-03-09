@@ -32,7 +32,7 @@ class Simple_drawing_window(QWidget):
         p.end()
 
 # tawan modification
-class Simple_drawing_window(Simple_drawing_window) :
+class Simple_drawing_window1(Simple_drawing_window) :
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Window 1")
@@ -68,20 +68,21 @@ def main():
     try:
         w = Simple_drawing_window1()
         w.show()
-    except:
-        print("no win 1 implementer")
+    except Exception as e:
+        raise e
+        print("no win 1 implemented")
 
     try:
         w = Simple_drawing_window2()
         w.show()
     except:
-        print("no win 2 implementer")
+        print("no win 2 implemented")
 
     try:
         w = Simple_drawing_window3()
         w.show()
     except:
-        print("no win 3 implementer")
+        print("no win 3 implemented")
 
     return app.exec_()
 
