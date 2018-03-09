@@ -1,7 +1,7 @@
 from turtle import *
 
 class Disk(object):
-    def __init__(self, dname, xpos, ypos, dh, dw, col = Turtle.fillcolor(0,255,0)):
+    def __init__(self, dname, xpos, ypos, dh, dw, col = "red"):
         self.name = dname
         self.x = xpos
         self.y = ypos
@@ -11,20 +11,20 @@ class Disk(object):
 
     def showdisk(self):
         pu()
-        goto(x,y)
+        goto(self.x, self.y)
         pd()
-        fillcolor(color)
+        fillcolor(self.color)
         begin_fill()
         seth(0)
-        fd(w / 2)
+        fd(self.w / 2)
         lt(90)
-        fd(h)
+        fd(self.h)
         lt(90)
-        fd(w)
+        fd(self.w)
         lt(90)
-        fd(h)
+        fd(self.h)
         lt(90)
-        fd(w / 2)
+        fd(self.w / 2)
         end_fill()
 
     def newpos(self,x,y):
@@ -33,24 +33,24 @@ class Disk(object):
 
     def cleardisk(self):
         pu()
-        goto(x,y)
+        goto(self.x,self.y)
         pd()
         fillcolor("white")
         pencolor("white")
         begin_fill()
         seth(0)
-        fd(w / 2)
+        fd(self.w / 2)
         lt(90)
-        fd(h)
+        fd(self.h)
         lt(90)
-        fd(w)
+        fd(self.w)
         lt(90)
-        fd(h)
+        fd(self.h)
         lt(90)
-        fd(w / 2)
+        fd(self.w / 2)
         end_fill()
         pencolor("black")
-        fillcolor(color)
+        fillcolor(self.color)
 
     def getx(self):
         return self.x

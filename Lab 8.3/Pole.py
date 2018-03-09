@@ -31,7 +31,7 @@ class Pole(object):
         turtle.pu()
 
     def pushdisk(self, disk):
-        disk.newpos(self.x, self.y + disk.geth*self.top)
+        disk.newpos(self.x, self.y + disk.geth()*self.top)
         disk.showdisk()
         self.stack += [disk,]
         self.top += 1
@@ -39,4 +39,6 @@ class Pole(object):
     def popdisk(self):
         self.stack[-1].cleardisk()
         self.top -= 1
-        return self.stack[-1]
+        s = self.stack[-1]
+        self.stack.pop()
+        return s

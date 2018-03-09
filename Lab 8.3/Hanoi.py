@@ -1,5 +1,6 @@
 from Disk import *
 from Pole import *
+from turtle import *
 
 class Hanoi(object):
     def __init__(self, n=3, start="A", workspace="B", destination="C"):
@@ -26,7 +27,8 @@ class Hanoi(object):
             self.move_tower(n-1, w, d, s)
 
     def solve(self):
-        self.move_tower(3, self.startp, self.destination, self.workspacep)
+        self.move_tower(3, self.startp, self.destinationp, self.workspacep)
 
+speed(0)
 h = Hanoi()
 h.solve()
