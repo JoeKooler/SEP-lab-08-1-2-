@@ -57,7 +57,7 @@ class Simple_drawing_window1(Simple_drawing_window) :
             QPoint(50,200), QPoint(150,200), QPoint(100,400),
         )
 
-        p.drawPixmap(QRect(200,100,336,203),self.cat)
+        p.drawPixmap(QRect(200,100,480,480),self.cat)
         p.end()
 # end tawan modification
 
