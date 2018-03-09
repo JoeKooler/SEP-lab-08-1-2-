@@ -1,8 +1,11 @@
+import sys
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
 
-
-class CanvasWidget:
+class CanvasWidget(QWidget):
     def __init__(self):
-        pass
+         QWidget.__init__(self, None)
 
     def clear(self):
          pass
