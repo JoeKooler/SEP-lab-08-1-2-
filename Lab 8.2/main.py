@@ -1,0 +1,4 @@
+
+
+class PaintProgram:
+    pass
