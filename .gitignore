@@ -10,3 +10,6 @@ __pycache__/drawingWindow\.cpython-36\.pyc
 \.idea/vcs\.xml
 
 \.idea/workspace\.xml
+.vs/ProjectSettings.json
+.vs/SEP-lab-08-1-2-/v15/.suo
+.vs/slnx.sqlite
