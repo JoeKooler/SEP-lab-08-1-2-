@@ -7,6 +7,7 @@ from DrawCanvas import *
 class PaintProgramWindow(QWidget):
     def __init__(self):
         QWidget.__init__(self, None)
+        self.setWindowTitle("Paint Program")
         layout = QVBoxLayout()
 
         self.canvas = CanvasWidget()
